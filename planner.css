@@ -1,0 +1,390 @@
+/*
+orange: #fd9f1b
+*/
+
+body {
+	margin:0;
+	padding:0;
+	min-width: 900px;
+	background: #5070B5;
+	font-family: 'Karla', sans-serif;
+}
+
+.dateAndButt {
+	float: right;
+	margin-right: 10px;
+}
+
+.dateAndButt button {
+   color: #fff;
+   font-weight:700;
+   background: #FF9166;
+   border-radius: 8px;
+   width:70px;
+   height: 24px;
+}
+
+h1 {
+	font-family: 'Shrikhand', cursive;
+	color: white;
+	font-size: 400%;
+	background: #FF9166;
+	margin:0;
+	text-align:center;
+}
+
+h2 {
+	text-align:center;
+	margin:10px 0;
+}
+
+#mid {
+	width: 50%;
+	margin: 0 1%;
+	margin-top: 25px;
+	background-color:white;
+	float:left;
+}
+
+#mid h2 {
+	border:5px solid #454445;
+	padding: 5px 0;
+	margin: 0;
+}
+
+#toDo {
+	border: 5px solid #454445;
+	height: 367px;
+	overflow: auto;
+}
+
+#toDo div {
+	border-top: 4px solid #58CCB6;
+	padding: 10px 0;
+	padding-left: 8px;
+}
+
+#toDo div:first-child {
+	border-top: 0;
+}
+
+#yourCourses {
+	border: 5px solid #58CCB6;
+	border-radius: 15px;
+	background-color: white;
+	margin-top: 25px;
+}
+
+#yourCourses ul {
+	margin: 0;
+	padding: 0;
+}
+
+#yourCourses ul li {
+	list-style-type: none;
+	text-align:center;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFD470;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+}
+
+nav ul li a {
+    display: block;
+    color: #454445;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #58CCB6;
+}
+
+#left-col {
+	width: 23%;
+	min-width: 230px;
+	float:left;
+	margin-left: 1%;
+}
+
+#left-col h2{
+	display: block;
+	border-bottom: 2px solid #454445;
+	width: 80%;
+	margin: 10px auto;
+}
+
+#right-col {
+	float:left;
+	width: 18%;
+	border:5px solid #FFD470;
+	padding: 8px;
+	border-radius: 15px;
+	margin: 0 1%;
+	margin-top: 25px;
+	background: white;
+}
+
+#right-col h2 {
+	border-bottom: 2px solid #454445;
+}
+
+label {display:block;}
+textarea { display:block;}
+
+#formContainer {
+	border:5px solid #FFD470;
+	border-radius: 14px;
+	width: 60%;
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	margin-top: 25px;
+	background: white;
+}
+
+#newCourseInfo {
+	text-align:center;
+	width: 70%;
+	margin: 5px auto;
+	margin-bottom: 12px;
+}
+
+#butt {
+	text-align:center;
+}
+
+.toCenter {
+	text-align:center;
+}
+
+h2 {
+	text-align:center;
+}
+
+#warning {
+	border: 5px solid #FF6758;
+	border-radius: 12px;
+	text-align:center;
+	background: white;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+table, th, td {
+	border-collapse: collapse;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px;
+}
+
+th {
+	border-bottom: 1px solid black;
+}
+
+table {
+	margin-bottom: 8px;
+}
+
+
+/* For Swinging Calender */
+time.icon
+{
+  font-size: 1em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  margin: 2em auto;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 10%;
+  transform-origin: 50% 10%;
+}
+
+time.icon *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #FF9166;
+  border-bottom: 1px dashed #FF6853;
+  box-shadow: 0 2px 0 #FF604F;
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #FF9166;
+}
+
+time.icon span
+{
+  width: 100%;
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+
+time.icon:hover, time.icon:focus
+{
+  -webkit-animation: swing 0.6s ease-out;
+  animation: swing 0.6s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0%   { -webkit-transform: rotate(0deg)  skewY(0deg); }
+  20%  { -webkit-transform: rotate(12deg) skewY(4deg); }
+  60%  { -webkit-transform: rotate(-9deg) skewY(-3deg); }
+  80%  { -webkit-transform: rotate(6deg)  skewY(-2deg); }
+  100% { -webkit-transform: rotate(0deg)  skewY(0deg); }
+}
+
+@keyframes swing {
+  0%   { transform: rotate(0deg)  skewY(0deg); }
+  20%  { transform: rotate(12deg) skewY(4deg); }
+  60%  { transform: rotate(-9deg) skewY(-3deg); }
+  80%  { transform: rotate(6deg)  skewY(-2deg); }
+  100% { transform: rotate(0deg)  skewY(0deg); }
+}
+
+/* Specifically for Courses.php: */
+
+#c-left-col {
+	margin-top: 25px;
+	border: 1px solid red;
+	width: 20%;
+	float:left;
+	margin-left: 1%;
+	background-color: white;
+	border: 5px solid #58CCB6;
+	border-radius: 15px;
+	text-align:center;
+	padding:5px;
+}
+
+#c-left-col h2 {
+	border-bottom: 2px solid #454445;
+}
+
+#courses {
+	padding: 0;
+	margin: 0;
+}
+
+#courses li {
+	list-style-type: none;
+	text-align:center;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#showRemove div {
+	padding-left: 15px;
+	margin-top: 10px;
+}
+
+#showRemove button {
+   color: #fff;
+   font-weight:700;
+   background: #FF6758;
+   border-radius: 8px;
+   width:70px;
+   height: 24px;
+}
+
+#c-mid h2 {
+	border-bottom:5px solid #454445;
+	padding: 5px 0;
+	margin: 0;
+}
+
+#c-mid {
+	width: 50%;
+	margin: 0 1%;
+	margin-top: 25px;
+	background-color:white;
+	float:left;
+	border: 5px solid #454445;
+}
+
+.addButt {
+	float: right;
+   color: #fff;
+   font-weight:700;
+   background: #3D558A;
+   border-radius: 8px;
+   width:50px;
+   height: 20px;
+   text-shadow: 0 0px 10px #134158;
+}
+
+
+#results div {
+	border-top: 4px solid #58CCB6;
+	padding: 5px;
+}
+
+/* For Tcourses.php */
+
+table button {
+   color: #fff;
+   font-weight:700;
+   background: #FF6758;
+   border-radius: 8px;
+   width:70px;
+   height: 24px;
+}
+
+/* For Tadd.php */
+
+#selectC {
+	padding: 7px;
+	background: white;
+	border: 5px solid #58CCB6;
+	margin-top: 25px;
+	border-radius: 12px;
+}
+
+#addTButt {
+   color: #fff;
+   font-weight:700;
+   background: #3D558A;
+   border-radius: 8px;
+   width:70px;
+   height: 40px;
+   text-shadow: 0 0px 10px #134158;
+}
+
+textarea {
+	resize:none;
+}
